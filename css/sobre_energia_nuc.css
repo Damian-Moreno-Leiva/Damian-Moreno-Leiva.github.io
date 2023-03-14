@@ -1,0 +1,88 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+}
+body{
+	color: yellow;
+	background-color: black;
+}
+
+img{
+	width: 600px;
+	height: 400px;
+}
+
+#Fision{
+	display: flex;
+	align-items: center;
+	margin-top:30px; 
+	flex-direction:column;
+}
+
+.img{
+	margin: 10px 0px;
+}
+
+#leg1{
+	font-size: 10px;
+	font-family: Arial;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 6px;
+}
+h1{
+	margin-bottom:30px;
+	text-align: center;
+	color:#33731B;
+	font-family: Comfortaa;
+	margin-top:15px;
+	border-bottom: 2px solid green;
+	padding-bottom: 5px;
+}
+
+.texto{
+	font-family: Comfortaa;
+	margin: auto;
+	text-align: center;
+	line-height: 1.5;
+	width: 90%;
+	font: 100 ;
+}
+
+b.importante{
+	font-weight: 900;
+	color: #33731B;
+	display: inline-block;
+}
+
+#text{
+	display: inline-block;
+}
+.fusion,.fision{
+	display: inline-block;
+}
+
+
+#volver{
+
+	padding: 3px 16px;
+
+	background-color: blue;
+	border-radius: 6px;
+
+	margin-left: 100px;
+	margin-right: auto;
+
+	color:white;
+	text-decoration: none;
+
+	font-family: 'Comfortaa';
+	font-size: 13px;
+
+	margin-left: 48%;
+	position: relative;
+	top:40px;
+
+}

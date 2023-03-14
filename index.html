@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nuevo proyecto</title>
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Lato&family=Nunito:ital,wght@0,1000;1,600&family=Roboto:wght@300&family=Zen+Dots&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+
+	<header>
+		<nav id = "navbar">
+			<div id="menu">
+				<img src="./img/logo.png" alt="logo" width ="40" height= "40" id="logo">
+
+				<button id="btnDisplayMenu"><i class="fa-solid fa-list"></i></button>
+			</div>
+
+			<div id="opcionesNav">
+				<div class="dark-mode-switch">
+					<label for="check_dark_mode">Modo oscuro</label>
+					<input type="checkbox" id = "check_dark_mode">
+				</div>
+				<a id= "info" class="opNav">Informacion</a>
+				<a id= "settings" class="opNav">Ajustes</a>
+				<a class="opNav" id="contact">Contactenos</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="opciones-menu">
+		<a class="opcion-menu" id="op1" href="./sobreESIM.html">Sobre ESIM</button>
+		<a class="opcion-menu" id="op3" href="./sobre_energia_nuc.html">Sobre la energia nuclear</a>
+		<a class="opcion-menu" id = "op2" href="./sobreMi.html">Sobre mi</a>
+	</div>
+
+	<div class="contactanos">
+		<div class="unit-contact">
+			<p class="contact-viables">Email del profe Pedro:</p><p class="contact-viables-content">pedro.delacruz@esim.edu.ar</p>
+		</div>
+		<div class="unit-contact">
+			<p class="contact-viables">Email del profe Ezequiel: </p><p class="contact-viables-content">ezecarballo@esim.edu.ar</p>
+		</div>
+		<div class="unit-contact">
+			<p class="contact-viables">Email de la profe Victoria: </p><p class="contact-viables-content">Desconocido</p>
+		</div>
+		<div class="unit-contact">
+			<p class="contact-viables">Email propio: </p><p class="contact-viables-content">dam905040@gmail.com</p>
+		</div>
+</div>
+
+<div class="informacion">
+	Este es un recurso creado por Damián Moreno estudiante de la Escuela Secundaria de Innovación de Misiones o ESIM por sus siglas, con el objeto de concientizar a las personas sobre los convenientes e inconvenientes de el uso de energía nuclear como recurso electrico, para más informacion puedes clicar sobre "Sobre ESIM", "Sobre la energia nuclear o en "Sobre mi".</p>
+</div>
+
+	<aside id="aside">
+
+		<div id="cuerpo">
+
+			<img src="./img/Radiacion_logo.png" width="60" height="60" id="img-nuc">
+
+			<h1 class="titulo">Energía núclear</h1>
+		</div>
+
+		<div class="swiper">
+
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide">	
+					<img src="./img/imagen_slider1.png" class="img-slider" alt="imagen 1">
+				</div>
+				
+				<div class="swiper-slide">
+					<img src="./img/imagen_slider2.png" class="img-slider" alt="imagen 3">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/imagen_slider3.png" class="img-slider" alt="imagen 2">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/imagen_slider4.jpg" class="img-slider" alt="imagen 4">
+				</div>
+			</div>
+			 <div class="swiper-pagination"></div>
+  				<!-- If we need navigation buttons -->
+  			<div class="swiper-button-prev"></div>
+  			<div class="swiper-button-next"></div>
+  			<!-- If we need scrollbar -->
+  			<div class="swiper-scrollbar"></div>
+		</div>
+		<div class="img-asaide"></div>
+	</aside>
+
+	<div class="cont-footer">
+		<div class="textos">
+			<p class="text">Página web</p>
+			<p class="text">Mi email</p>
+			<p class="text">Documentos sobre energía nuclear</p>
+		</div>
+		<div class="links">
+			<a href="https://esim.edu.ar/web/" class="link">Aquí</a>
+			<p class="link">dam905040@gmail.com</p>
+			<a href="#" class="link">Documentacion</a>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/e3934dca74.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script type="module">
+		 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+		$(function(){
+
+			let dark_mode_button = document.querySelector('#check_dark_mode');
+			let control_menu = true;
+
+			$("#btnDisplayMenu").click(function(){
+
+				if(document.querySelector(".opciones-menu").style.display == 'flex' && control_menu == false){
+					$(".opciones-menu").css({'display':''})
+					control_menu = true;
+				}else{
+					if (document.querySelector('.opciones-menu').style.display == '' && control_menu == true) {
+						$('.opciones-menu').css({'display':'flex'})
+						control_menu = false;
+					}
+				}
+			})
+
+			$('#settings').click(function(){
+				if(document.querySelector('.dark-mode-switch').style.display == '' && control_menu == true){
+					$(".dark-mode-switch").css({
+						'display':'block'})
+					control_menu = false;
+				}else{
+					if(document.querySelector('.dark-mode-switch').style.display == 'block' && control_menu == false){
+						$('.dark-mode-switch').css({
+							'display':''})
+						control_menu = true;
+					}
+				}
+			})
+
+			$('#contact').click(function(){
+				if(document.querySelector('.contactanos').style.display == '' && control_menu == true){
+					$('.contactanos').css({
+						'display':'block'
+					})
+
+					control_menu = false;
+				} else{
+					if(document.querySelector('.contactanos').style.display == 'block' && control_menu == false){
+						$('.contactanos').css({
+							'display':''
+						})
+						control_menu = true;
+					}
+				}
+			})
+
+			$('#info').click(function(){
+				if(document.querySelector(".informacion").style.display == '' && control_menu == true){
+					$('.informacion').css({
+						'display':'block'
+					})
+					control_menu = false;
+				}else{
+					if(document.querySelector('.informacion').style.display == 'block' && control_menu == false){
+						$('.informacion').css({
+							'display':''
+						})
+						control_menu = true;
+					}
+				}
+			})
+
+			dark_mode_button.addEventListener('click',()=>{
+				if (dark_mode_button.checked == true){
+					$('body').css({
+						'background-color':"#090909"
+					})
+					$('#navbar').css({
+						'background-color':'black'
+					})
+
+					$('.informacion').css({
+						'color':'#ebeae4'
+					})
+
+					$('.contact-viables').css({
+						'color':'white'
+					})
+				}else{
+					if(dark_mode_button.checked == false){
+
+						$('body').css({
+							'background-color':'white'
+						})
+
+						$('nav').css({
+							'background-color':'blue'
+						})
+
+						$('.contact-viables').css({
+							'color':'black'
+						})
+
+						$('.informacion').css({
+							'color':'black'
+						})
+
+					}
+				}
+			})
+			const swiper = new Swiper('.swiper', {
+  				// Optional parameters
+  				direction: 'horizontal',
+ 				loop: true,
+ 				effect: 'slide',
+ 				autoplay: {
+ 					delay: 4000,
+ 				},
+
+  						/* 		If we need pagination	*/
+  				pagination: {
+    				el: '.swiper-pagination',
+  			},
+
+  					/*		 Navigation arrows		*/
+  			navigation: {
+    			nextEl: '.swiper-button-next',
+    			prevEl: '.swiper-button-prev',
+  			},
+
+  					/*		And if we need scrollbar	*/
+  				scrollbar: {
+    				el: '.swiper-scrollbar',
+ 			},
+		});
+
+	})
+	</script>
+
+
+			<srcript src="./js/app.js">
+		</srcript>
+	</body>
+</html>
